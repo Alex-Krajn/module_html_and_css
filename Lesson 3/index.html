@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Форма</title>
+    </head>
+    <body>
+        <form name="form" action="http://courses.krajn.by/lesson/3/pizza.php" method="POST">
+            <input name="firstname" type="text" value="Alexxxx" placeholder="Введите своё имя!" />
+            <input name="lastname" type="text" value="Adukar" required disabled/>
+            
+            <input name="check" type="checkbox">
+
+            <input name="date" type="date">
+
+            <input name="color" type="color">
+
+            <input name="renge" type="range" min="1" max="3" value="3">
+
+            <input name="pass" type="password">
+
+            <input name="radiobutton" value="one" type="radio">
+            <input name="radiobutton" value="to" type="radio">
+            <input name="radiobutton" value="three" type="radio">
+
+            <select name="gender">
+                <option value="single">Муж.</option>
+                <option value="male">Жен.</option>
+                <option value="other">Др.</option>
+            </select>
+
+            <textarea cols="50" rows="5"></textarea>
+
+            <label>Text:
+                <input type="text" />
+            </label>
+
+            <label for="input">Enter text</label>
+            <input id="input" type="text" />
+
+            <button>Кнопка</button>
+        </form>
+
+        <div>
+            <a href="http://adukar.by">Ссылка 1</a>
+            <a href="../Lesson 2/index.html">Lesson 2</a>
+            <a href="tel:123456789">Номер телефона</a>
+        </div>
+
+        <div>
+            <iframe src="../Lesson 2/index.html"></iframe>
+        </div>
+
+        <div>
+            <img src="dfgfgdfg.png" alt="Котики">
+        </div>
+    </body>
+</html>
