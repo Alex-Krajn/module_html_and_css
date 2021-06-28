@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.gradient{
+    width: 100%;
+    height: 50vh;
+}
+
+.linear{
+    /* background-image: linear-gradient(to left, #444, #25ff11, #f83422); */
+    /* background-image: linear-gradient(to right, #444, #25ff11, #f83422); */
+    /* background-image: linear-gradient(to top, #444, #25ff11, #f83422); */
+    /* background-image: linear-gradient(to bottom, #444, #25ff11, #f83422); */
+    /* background-image: linear-gradient(90deg, #444, #25ff11, #f83422); */
+    background-image: linear-gradient(90deg, #444, #25ff11 90%, #f83422);
+}
+
+.radio{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* background-image: radial-gradient(at center bottom, #000, #ff00ff); */
+    /* background-image: radial-gradient(at 50%, 50%, #000, #ff00ff); */
+    background-image: radial-gradient(circle, #000, #ff00ff);
+}
+
+.shadow{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    /* Смещение X, смещение Y, радиус размытия, толщина, цвет */
+    box-shadow: 0 0 20px 5px #000;
+    box-shadow: inset 0 0 20px #000;
+    transition: 0.5s;
+}
+
+.shadow:hover{
+    box-shadow: inset 0 0 100px #000;
+}
+
+.shadow-text{
+    margin: 20px;
+    text-shadow: 2px 0 1px #000000;
+}
+
+
+.filter{
+    display: flex;
+    width: 600px;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.filter img{
+    max-width: 45%;
+    margin-bottom: 40px;
+    transition: 0.5s;
+}
+
+/* 
+
+< 1 | < 100%
+> 1 | > 100%
+
+*/
+
+.brightness:hover{
+    /* Яркость */
+    filter: brightness(2);
+    cursor: pointer;
+}
+
+.contrast:hover{
+    /* Контрастность */
+    filter: contrast(0.3);
+    cursor: copy;
+}
+
+.opacity:hover{
+    filter: opacity(0.3);
+    cursor: progress;
+}
+
+.saturate:hover{
+    /* Насыщенность */
+    filter: saturate(100);
+    cursor: crosshair;
+}
+
+.invert:hover{
+    /* Инвертирование цвета */
+    filter: invert(2);
+}
+
+.sepia:hover{
+    filter: sepia(4);
+}
+
+.blur:hover{
+    filter: blur(10px);
+}
